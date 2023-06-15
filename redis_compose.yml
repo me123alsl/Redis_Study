@@ -1,0 +1,2 @@
+docker run -p "6379:6379" --name my-redis -d redis
+docker exec -it my-redis redis-cli
