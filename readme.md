@@ -14,5 +14,5 @@
 
 ---
 
-[**참고** - Redis Docker](/docker-redis/redis_docker.md)
--
+* ## [**참고** - Redis Docker](/docker-redis/redis_docker.md)
+---
