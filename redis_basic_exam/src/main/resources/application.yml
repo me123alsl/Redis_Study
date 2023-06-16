@@ -1,6 +1,10 @@
 spring:
+    # Session 저장소
     session:
         store-type: redis
+    # Cache 저장소
+    cache:
+        type: redis
     redis:
         host: localhost
         port: 6379
