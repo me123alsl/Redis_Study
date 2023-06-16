@@ -24,7 +24,7 @@
 - 브라우저는 쿠키를, 서버는 해당 쿠키에 연관된 세션 정보를 저장
 - 유저가 로그아웃하거나 세션이 만료될떄 까지 유지되어 유저에 특정한 서비스 가능
 
-![Web-Login-Session](image.png)
+![Web-Login-Session](img/image.png)
 
 ## **분산 환경에서의 Session**
 
@@ -32,7 +32,7 @@
 - Server가 여러대라면 최초로그인한 Server 가아닐경우 세션 정보를 찾을수 없음
 - Session 정보를 공유하는 방법이 필요(Session Clustering)
 
-![Distributed-Env-Session](image-1.png)
+![Distributed-Env-Session](img/image-1.png)
 
 ### **분산환경에서의 Session 처리 - RDB**
 
@@ -43,7 +43,7 @@
 - 성능 요구사항을 충족하는가?
   - 아니요. 세션 정보는 빠르게 조회되어야 함
 
-![RDB-Session](image-2.png)
+![RDB-Session](img/image-2.png)
 
 ### **분산환경에서의 Session 처리 - Redis**
 
@@ -51,7 +51,7 @@
 - 세션 데이터는 영속성이 필요하지 않음
 - 세션 데이터는 변경이 빈번하고 빠른 액세스 속도가 필요
 
-![Redi-Session](image-3.png)
+![Redi-Session](img/image-3.png)
 
 ## **Session 관리 서버의 역할**
 
@@ -76,7 +76,7 @@
 - `getAttribute(name)`로 Session에서 데이터를 조회
 - `removeAttribute(name)`로 Session에서 데이터를 삭제
 
-![SpringBoot-Session-Flow](image-4.png)
+![SpringBoot-Session-Flow](img/image-4.png)
 
 #### ***SpringBoot에서 Session을 사용하는 방법***
 

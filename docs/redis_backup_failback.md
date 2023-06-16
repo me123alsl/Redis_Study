@@ -26,7 +26,7 @@
 - 특정 시점의 스냅샷으로 데이터 저장
 - 재시작 시 RDB 파일이 있으면 읽어서 복구
 
-![RedisDB_백업](image-14.png)
+![RedisDB_백업](img/image-14.png)
 
 ### ***RDB 사용의 장점***
 
@@ -97,7 +97,7 @@ ls -al /data
 - **모든 변경사항을 기록**하는 로그 파일
 - 재시작 시 AOF에 기록된 모든 동작을 재수행해서 데이터를 복구
 
-![AOF_Redis_Backup](image-15.png)
+![AOF_Redis_Backup](img/image-15.png)
 
 ### AOF 사용의 장점
 
@@ -152,7 +152,7 @@ appendfsync everysec
 - redis도 복제를 통해 가용성 확보 및 빠른 장애조치 가능
 - master가 죽었을 경우 replica 중 하나를 master로 전환해 즉시 서비스 정상화
 - 복제본(replica)는 **read-only 노드로 사용**가능하여 **traffic 분산 가능**
-![Redis_Replica](image-16.png)
+![Redis_Replica](img/image-16.png)
 
 ---
 
@@ -180,7 +180,7 @@ replica-read-only yes
 
 - Redis에서 HA(High-Availability)를 제공하는 장치
 - master-replica 구조에서 master 다운 시, replica를 master로 승격 수행(**`auto-failover`**)
-![Redis_Sentinel](image-17.png)
+![Redis_Sentinel](img/image-17.png)
 
 ### ***Redis Sentinel 구성도***
 
@@ -189,7 +189,7 @@ replica-read-only yes
   - Sentinel 들은 서로 연결되어있어야 함
   - Sentinel 은 master, replica, sentinel 노드를 모니터링하고 관리
   - Client는 Sentinel을 통해서 Redis에 접근  
-    ![Redis_Sentinel_Architecture](image-18.png)
+    ![Redis_Sentinel_Architecture](img/image-18.png)
 
 ### ***Redis Sentinel 특징***
 
