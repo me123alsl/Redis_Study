@@ -27,10 +27,8 @@ public class ChatService implements MessageListener {
                 System.out.println("Exit!");
                 break;
             }
-
             redisTemplate.convertAndSend(chatRoomName, line);
         }
-
         in.close();
     }
 
